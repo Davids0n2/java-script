@@ -6,6 +6,23 @@
     <title>Pratica da aula de condições</title>
 </head>
 <body>
-    <input type="text">
+    Qual é sua idade?
+    <input type="text" id="DR">
+    <input type="Number" id="JJ">
+    <input type="button" value="Enter" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+
+        function clicar() {
+            var idade = window.document.querySelector('input#JJ')
+            var nom = window.document.querySelector('input#DR')
+            var res = window.document.querySelector('div#res')
+            var vel = Number(idade.value)
+            var vel2 = 
+            res.innerHTML = `<p>Seu nome é ${vel2} e sua idade é ${vel} anos</p>`
+            
+        }
+    </script>
 </body>
 </html>
