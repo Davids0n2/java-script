@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica da aula de condições</title>
+</head>
+<body>
+    <h1>Preencha as informações a baixo:</h1>
+
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    <input type="number" id="idade" placeholder="Digite sua idade">
+    <input type="button" value="Enter" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        function clicar(){
+            var miojo = window.document.querySelector('input#nome').value
+            var jojo = window.document.querySelector('input#idade').value
+            var resu = window.document.querySelector('div#res')
+            resu.innerHTML = `<p> ${miojo},  você tem ${jojo} anos e ainda miaja nas cairça </p>`
+        }
+    </script>
+</body>
+</html>
