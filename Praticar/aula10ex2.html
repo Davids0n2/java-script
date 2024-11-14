@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica de interação</title>
+</head>
+<style>
+    #area{
+        height: 200px;
+       width: 200px;
+       border: 2px solid black;
+       line-height: 170px;
+       text-align: center;
+    }
+
+
+</style>
+<body>
+
+    <div id="area">
+        <p>interaja...</p>
+    </div>
+    
+    <script>
+        var interação = document.querySelector('div#area')
+        interação.addEventListener('click' , clicar)
+        interação.addEventListener('mouseenter' , entrou)
+        interação.addEventListener('mouseout' , saiu)
+
+        function clicar(){
+            interação.innerText = `Clicou`
+            interação.style.background = 'red' 
+        }
+
+        function entrou(){
+            interação.innerText = 'entrou'
+        }
+
+        function saiu(){
+            interação.innerText = 'saiu'
+        }
+    </script>
+</body>
+</html>
