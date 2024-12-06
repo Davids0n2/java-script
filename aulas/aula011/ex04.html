@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+</head>
+<body>
+    <h1>Verificação de Nacionalidade</h1>
+    <input type="text" id="tt" placeholder="Seu país" >
+    <input type="button" value="Verificar" onclick="clicou()">
+    <div class="resu"></div>
+
+    <script>
+        function clicou(){
+            var texto = document.querySelector('input#tt').value;
+            var resu = document.querySelector('div.resu');
+            if(texto == 'brasil'){
+                resu.innerHTML = `<p>É do ${texto}? Você é Brasileiro!</p>`;
+            }else{
+                resu.innerHTML = `<p>${texto}? Você é estrangeiro!</p>`;
+
+            }
+        }
+    </script>
+</body>
+</html>
