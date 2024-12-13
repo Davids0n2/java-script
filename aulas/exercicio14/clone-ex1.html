@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refazendo o ex1 sozinho</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        text-align: center;
+        font-size: 1em;
+        font-family: sans-serif;
+    }
+
+    img{
+        height: 130px;
+        width: 140px;
+        border-radius: 50%;
+    }
+
+    section{
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.486);
+    }
+
+    footer{
+        font-style: italic;
+    }
+
+</style>
+<body onload="carregar()">
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    <section>
+        <div id="msg">
+
+        </div>
+
+        <div id="foto">
+            <img src="manha.jpg" alt="" id="imagem">
+        </div>
+
+    </section>
+    <footer>
+        <h1>&copy;Curso em video</h1>
+    </footer>
+    <script>
+        function carregar(){
+            var msg = document.getElementById('msg')
+            var img = document.getElementById('imagem')
+            var date = new Date()
+            var hora = date.getDate()
+
+            msg.innerHTML = `Agora são ${hora} horas.`
+
+            if(hora >= 0 && hora < 12){
+                img.src = 'manha.jpg'
+                document.body.style.background = '#e2cd9f'
+
+            }else if(hora >= 12 && hora <= 18){
+                img.src = 'tarde.jpg'
+                document.body.style.background = '#b9846f'
+                
+            }else{
+                img.src =  'linda-noite.avif'
+                document.body.style.background = '#525254'
+            }
+        }
+    </script>
+</body>
+</html>
