@@ -37,10 +37,10 @@ function verificar(){
 
             }else if( idade < 21){
                 //Jovem
-                img.setAttribute('src' , 'jovem-M.jpg')
+                img.setAttribute('src' , 'M-jovem.avif')
 
             } else if(idade < 70){
-                img.setAttribute('src' , 'idosinho-M.avif')
+                img.setAttribute('src' , 'idosinho-M.jpg')
             }else{
                 //Idoso
                 window.alert(`Tem ${idade} anos e sabe mexer na internet? sai dai, mentiroso!`)
