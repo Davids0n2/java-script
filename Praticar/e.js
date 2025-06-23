@@ -1,4 +1,4 @@
-var hora = 4
+var hora = new Date().getHours();
 if (hora <= 5){
     console.log('boa madrugada')
 }else if(hora <= 12){
