@@ -1,7 +1,7 @@
 var cont = 1 
 while(cont <= 500){
     console.log(`Passo ${cont}`)
-    cont++ //(c = c + 1)
+    cont++   //(cont = cont + 1)
 }
 
 
