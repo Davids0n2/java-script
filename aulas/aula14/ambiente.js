@@ -12,4 +12,9 @@ for(var c  = 1; c <= 10; c++){
 }
 console.log('FIM!')
 
+// teste 
+for(var i = 0; i < 5; i++){
+    console.log(`Teste ${i}`)
+}
+
 // for (inicialização; condição; incremento) { bloco de código }
