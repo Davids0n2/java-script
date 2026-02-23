@@ -1,0 +1,28 @@
+body{
+    font-family: sans-serif;
+    background-color: rgb(0, 147, 192);
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 10mm;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.555);
+}
+
+section{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+footer > p{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
+}
