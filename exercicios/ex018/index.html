@@ -7,19 +7,22 @@
 </head>
 <body>
     <header>
-         <h1>Analisador de números</h1>
+        <h1>Analisador de números</h1>
     </header>
     <main>
         <div>
-            <p>Número (entre 1 a 100)</p> 
-            <input type="text" id="txtn">
-            <input type="button" value="Adicionar" onclick="add">
-            <option value="ab"></option>
+            <p>Número (entre 1 a 100)</p>
+            <input type="number" id="txtn" min="1" max="100" placeholder="Digite um número">
+            <input type="button" value="Adicionar" onclick="add()">
+            <input type="button" value="Finalizar" onclick="finalizar()">
+            <select id="f-lista" size="8" style="width: 100%; margin-top: 0.5rem;"></select>
+            <div id="res" style="margin-top: 1rem;"></div>
         </div>
     </main>
 
     <footer>
             <p>Desenvolvido por <strong>Gustavo Guanabara</strong></p>
     </footer>
+    <script src="Analizador.js"></script>
 </body>
 </html>
